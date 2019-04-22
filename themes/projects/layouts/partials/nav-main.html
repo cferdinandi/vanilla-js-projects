@@ -1,0 +1,13 @@
+<header class="container container-large margin-bottom">
+	<nav class="nav-wrap">
+		<a class="logo" href="{{ .Site.BaseURL }}">
+			<svg xmlns="http://www.w3.org/2000/svg" style="height:.9em;width:.9em;margin-bottom:-2px;" viewBox="0 0 18 16"><title></title><path fill="currentColor" d="M0 11v4h11c2 0 5-1.828 5-4H0zM8 1l-8 9h8zm1 2v7h5c0-5-5-7-5-7z"/></svg>
+			{{ .Site.Title }}
+		</a>
+		<div class="nav-menu" id="nav-menu">
+			<ul class="nav">
+				{{ partial "nav-items.html" . }}
+			</ul>
+		</div>
+	</nav>
+</header>
