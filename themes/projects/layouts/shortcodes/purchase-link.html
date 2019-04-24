@@ -5,4 +5,4 @@
 	{{- .Scratch.Set "apiPrice" (index (index $apiPrices "projects") "price") -}}
 {{- end -}}
 
-<p><a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id=35988">Join now for just {{ if ne (.Scratch.Get "apiPrice") "" }}{{ .Scratch.Get "apiPrice" | safeHTML }}{{ else }}{{ $.Site.Params.price | safeHTML }}{{ end }}/month</a></p>
+<p><a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id=36000">Join now for just {{ if ne (.Scratch.Get "apiPrice") "" }}{{ .Scratch.Get "apiPrice" | safeHTML }}{{ else }}{{ $.Site.Params.price | safeHTML }}{{ end }}/month</a></p>
