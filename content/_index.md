@@ -21,7 +21,9 @@ With a Vanilla JS Projects subscription, you'll get new vanilla JS projects to w
 
 ## How it works
 
-[SAMPLE PROJECT VIDEO GOES HERE...]
+<iframe src="https://player.vimeo.com/video/332112906?color=0088cc&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<p><em class="text-muted text-small"><strong>Sample project:</strong> building a DOM manipulation micro-library.</em></p>
 
 Vanilla JS Projects is an open-ended, monthly subscription service.
 
