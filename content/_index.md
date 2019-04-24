@@ -12,7 +12,7 @@ description: ""
 
 <span class="text-large">The best way to learn JavaScript is by writing lots of code, but where do you even start? And what happens when you get stuck?</span>
 
-With a Vanilla JS Projects subscription, you'll get new vanilla JS projects to work on&mdash;with starter templates, solution videos, and completed source code&mdash;every month.
+With a Vanilla JS Projects subscription, you'll get new vanilla JS projects to work on each month&mdash;with starter templates, solution videos, and completed source code.
 
 {{<cta for="projects">}}
 
