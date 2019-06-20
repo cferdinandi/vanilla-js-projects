@@ -151,12 +151,6 @@ li {
 	}
 }
 
-.list-columns {
-	@media (min-width: $bp-medium) {
-		column-count: 2;
-	}
-}
-
 dl,
 dd {
 	margin: 0;

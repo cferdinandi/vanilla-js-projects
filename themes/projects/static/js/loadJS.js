@@ -1,9 +1,9 @@
 /*!
- * projects v1.0.0
- * The theme for vanillajsprojects.com
+ * guides v1.2.0
+ * The theme for gomakethings.com
  * (c) 2019 Chris Ferdinandi
  * MIT License
- * http://github.com/cferdinandi/vanilla-js-office-hours
+ * http://github.com/cferdinandi/vanilla-js-guides
  */
 
 /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
