@@ -10,7 +10,7 @@ description: ""
 <h1 class="no-padding-top no-margin-bottom h5">The Complete Set</h1>
 <p><span class="text-xlarge">Deep-dive into vanilla JavaScript.</span></p>
 
-<img class="aligncenter" style="width: 88%;" src="/img/guides/complete-set.jpg">
+<img class="aligncenter" style="width: 88%;" src="/img/projects/complete-set.jpg">
 
 <span class="text-large">Get every project, all of the templates and tutorials, and exclusive Slack access.</span>
 

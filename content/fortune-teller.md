@@ -10,7 +10,7 @@ description: ""
 <h1 class="no-padding-top no-margin-bottom h5">Fortune Teller</h1>
 <p><span class="text-xlarge">See into the future by building an app that provides answers to any question.</span></p>
 
-<img class="aligncenter" style="width: 88%;" src="/img/guides/dom-manipulation.jpg">
+<img class="aligncenter" style="width: 88%;" src="/img/projects/fortune-teller.jpg">
 
 <span class="text-large">You'll learn about DOM manipulation, working with arrays, and web accessibility.</span>
 
