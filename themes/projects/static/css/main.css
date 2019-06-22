@@ -1,9 +1,9 @@
 /*!
- * projects v1.0.0
- * The theme for vanillajsprojects.com
+ * guides v1.2.0
+ * The theme for gomakethings.com
  * (c) 2019 Chris Ferdinandi
  * MIT License
- * http://github.com/cferdinandi/vanilla-js-office-hours
+ * http://github.com/cferdinandi/vanilla-js-guides
  */
 
 /**
@@ -237,7 +237,7 @@ figure {
 }
 
 /* line 25, src/sass/components/_grid.scss */
-.grid-fifth, .grid-fourth, .grid-third, .grid-two-fifths, .grid-half, .grid-three-fifths, .grid-two-thirds, .grid-three-fourths, .grid-four-fifths {
+.grid-fourth, .grid-third, .grid-half, .grid-two-thirds, .grid-three-fourths {
   float: left;
   padding-left: 1.4%;
   padding-right: 1.4%;
@@ -257,10 +257,6 @@ figure {
  */
 @media (min-width: 38em) {
   /* line 53, src/sass/components/_grid.scss */
-  .grid-fifth {
-    width: 20%;
-  }
-  /* line 53, src/sass/components/_grid.scss */
   .grid-fourth {
     width: 25%;
   }
@@ -269,16 +265,8 @@ figure {
     width: 33.33333%;
   }
   /* line 53, src/sass/components/_grid.scss */
-  .grid-two-fifths {
-    width: 40%;
-  }
-  /* line 53, src/sass/components/_grid.scss */
   .grid-half {
     width: 50%;
-  }
-  /* line 53, src/sass/components/_grid.scss */
-  .grid-three-fifths {
-    width: 60%;
   }
   /* line 53, src/sass/components/_grid.scss */
   .grid-two-thirds {
@@ -287,14 +275,6 @@ figure {
   /* line 53, src/sass/components/_grid.scss */
   .grid-three-fourths {
     width: 75%;
-  }
-  /* line 53, src/sass/components/_grid.scss */
-  .grid-four-fifths {
-    width: 80%;
-  }
-  /* line 59, src/sass/components/_grid.scss */
-  .offset-fifth {
-    margin-left: 20%;
   }
   /* line 59, src/sass/components/_grid.scss */
   .offset-fourth {
@@ -305,16 +285,8 @@ figure {
     margin-left: 33.33333%;
   }
   /* line 59, src/sass/components/_grid.scss */
-  .offset-two-fifths {
-    margin-left: 40%;
-  }
-  /* line 59, src/sass/components/_grid.scss */
   .offset-half {
     margin-left: 50%;
-  }
-  /* line 59, src/sass/components/_grid.scss */
-  .offset-three-fifths {
-    margin-left: 60%;
   }
   /* line 59, src/sass/components/_grid.scss */
   .offset-two-thirds {
@@ -323,10 +295,6 @@ figure {
   /* line 59, src/sass/components/_grid.scss */
   .offset-three-fourths {
     margin-left: 75%;
-  }
-  /* line 59, src/sass/components/_grid.scss */
-  .offset-four-fifths {
-    margin-left: 80%;
   }
 }
 
@@ -489,26 +457,19 @@ li {
   }
 }
 
-@media (min-width: 38em) {
-  /* line 154, src/sass/components/_typography.scss */
-  .list-columns {
-    column-count: 2;
-  }
-}
-
-/* line 160, src/sass/components/_typography.scss */
+/* line 154, src/sass/components/_typography.scss */
 dl,
 dd {
   margin: 0;
   padding: 0;
 }
 
-/* line 166, src/sass/components/_typography.scss */
+/* line 160, src/sass/components/_typography.scss */
 dd {
   margin-bottom: 1.5625em;
 }
 
-/* line 170, src/sass/components/_typography.scss */
+/* line 164, src/sass/components/_typography.scss */
 dt {
   font-weight: bold;
 }
@@ -517,7 +478,7 @@ dt {
  * Removes list styling.
  * For semantic reasons, should only be used on unordered lists.
  */
-/* line 178, src/sass/components/_typography.scss */
+/* line 172, src/sass/components/_typography.scss */
 .list-unstyled {
   margin-left: 0;
   list-style: none;
@@ -526,7 +487,7 @@ dt {
 /**
  * Display lists on a single line.
  */
-/* line 187, src/sass/components/_typography.scss */
+/* line 181, src/sass/components/_typography.scss */
 .list-inline {
   list-style: none;
   margin-left: -0.5em;
@@ -534,7 +495,7 @@ dt {
   padding: 0;
 }
 
-/* line 193, src/sass/components/_typography.scss */
+/* line 187, src/sass/components/_typography.scss */
 .list-inline li {
   display: inline-block;
   margin-left: 0.5em;
@@ -542,19 +503,19 @@ dt {
 }
 
 @media (max-width: 38em) {
-  /* line 200, src/sass/components/_typography.scss */
+  /* line 194, src/sass/components/_typography.scss */
   .list-inline.list-inline-responsive li {
     display: block;
   }
 }
 
-/* line 206, src/sass/components/_typography.scss */
+/* line 200, src/sass/components/_typography.scss */
 .list-inline-spaced {
   margin-left: -1.3125em;
   margin-right: -1.3125em;
 }
 
-/* line 210, src/sass/components/_typography.scss */
+/* line 204, src/sass/components/_typography.scss */
 .list-inline-spaced li {
   display: inline-block;
   margin-left: 1.3125em;
@@ -566,7 +527,7 @@ dt {
  * 1. Add a non-breaking space
  * 2. Make sure it doesn't mess up the DOM flow
  */
-/* line 224, src/sass/components/_typography.scss */
+/* line 218, src/sass/components/_typography.scss */
 .list-unstyled > li:before,
 .list-inline > li:before {
   content: "\200B";
@@ -579,7 +540,7 @@ dt {
  * Heading styling for h1 through h6 elements.
  * Heading class lets you use one heading type for semantics, but style it as another heading type.
  */
-/* line 236, src/sass/components/_typography.scss */
+/* line 230, src/sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   line-height: 1.2;
@@ -588,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
 }
 
-/* line 244, src/sass/components/_typography.scss */
+/* line 238, src/sass/components/_typography.scss */
 h1,
 .h1 {
   font-size: 1.5em;
@@ -596,32 +557,32 @@ h1,
 }
 
 @media (min-width: 38em) {
-  /* line 244, src/sass/components/_typography.scss */
+  /* line 238, src/sass/components/_typography.scss */
   h1,
   .h1 {
     font-size: 1.75em;
   }
 }
 
-/* line 254, src/sass/components/_typography.scss */
+/* line 248, src/sass/components/_typography.scss */
 h2,
 .h2 {
   font-size: 1.3125em;
 }
 
-/* line 259, src/sass/components/_typography.scss */
+/* line 253, src/sass/components/_typography.scss */
 h3,
 .h3 {
   font-size: 1.1875em;
 }
 
-/* line 264, src/sass/components/_typography.scss */
+/* line 258, src/sass/components/_typography.scss */
 h4, h5, h6,
 .h4, .h5, .h6 {
   font-size: 1em;
 }
 
-/* line 269, src/sass/components/_typography.scss */
+/* line 263, src/sass/components/_typography.scss */
 h4,
 .h4 {
   text-transform: uppercase;
@@ -634,7 +595,7 @@ h4,
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 283, src/sass/components/_typography.scss */
+/* line 277, src/sass/components/_typography.scss */
 hr {
   border: 0;
   border-top: 1px solid #e5e5e5;
@@ -646,22 +607,22 @@ hr {
   /* 2 */
 }
 
-/* line 292, src/sass/components/_typography.scss */
+/* line 286, src/sass/components/_typography.scss */
 .line-secondary {
   width: 50%;
 }
 
-/* line 296, src/sass/components/_typography.scss */
+/* line 290, src/sass/components/_typography.scss */
 .line-clear {
   border-top-color: transparent;
 }
 
-/* line 300, src/sass/components/_typography.scss */
+/* line 294, src/sass/components/_typography.scss */
 .line-heading {
   position: relative;
 }
 
-/* line 303, src/sass/components/_typography.scss */
+/* line 297, src/sass/components/_typography.scss */
 .line-heading:after {
   background-color: #ffffff;
   content: attr(data-heading);
@@ -676,21 +637,21 @@ hr {
 }
 
 @media (min-width: 28em) {
-  /* line 317, src/sass/components/_typography.scss */
+  /* line 311, src/sass/components/_typography.scss */
   .line-heading[data-heading-small]:after {
     content: attr(data-heading-small);
   }
 }
 
 @media (min-width: 38em) {
-  /* line 323, src/sass/components/_typography.scss */
+  /* line 317, src/sass/components/_typography.scss */
   .line-heading[data-heading-medium]:after {
     content: attr(data-heading-medium);
   }
 }
 
 @media (min-width: 60em) {
-  /* line 329, src/sass/components/_typography.scss */
+  /* line 323, src/sass/components/_typography.scss */
   .line-heading[data-heading-large]:after {
     content: attr(data-heading-large);
   }
@@ -699,7 +660,7 @@ hr {
 /**
  * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
  */
-/* line 338, src/sass/components/_typography.scss */
+/* line 332, src/sass/components/_typography.scss */
 b,
 strong {
   font-weight: inherit;
@@ -708,7 +669,7 @@ strong {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 346, src/sass/components/_typography.scss */
+/* line 340, src/sass/components/_typography.scss */
 b,
 strong {
   font-weight: bolder;
@@ -718,7 +679,7 @@ strong {
  * 1. Remove the bottom border in Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 355, src/sass/components/_typography.scss */
+/* line 349, src/sass/components/_typography.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -731,7 +692,7 @@ abbr[title] {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 364, src/sass/components/_typography.scss */
+/* line 358, src/sass/components/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -739,7 +700,7 @@ dfn {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 371, src/sass/components/_typography.scss */
+/* line 365, src/sass/components/_typography.scss */
 mark {
   background: #fbf9c9;
   color: #272727;
@@ -748,7 +709,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 381, src/sass/components/_typography.scss */
+/* line 375, src/sass/components/_typography.scss */
 small {
   font-size: 80%;
 }
@@ -756,7 +717,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 388, src/sass/components/_typography.scss */
+/* line 382, src/sass/components/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -765,12 +726,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 396, src/sass/components/_typography.scss */
+/* line 390, src/sass/components/_typography.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 400, src/sass/components/_typography.scss */
+/* line 394, src/sass/components/_typography.scss */
 sub {
   bottom: -0.25em;
 }
@@ -778,7 +739,7 @@ sub {
 /**
  * Blockquotes
  */
-/* line 409, src/sass/components/_typography.scss */
+/* line 403, src/sass/components/_typography.scss */
 blockquote {
   border-left: 0.25em solid #e5e5e5;
   font-style: italic;
@@ -787,20 +748,20 @@ blockquote {
   padding-right: 1em;
 }
 
-/* line 417, src/sass/components/_typography.scss */
+/* line 411, src/sass/components/_typography.scss */
 blockquote cite {
   color: #808080;
   font-size: 0.9375em;
   padding-top: 1em;
 }
 
-/* line 424, src/sass/components/_typography.scss */
+/* line 418, src/sass/components/_typography.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 429, src/sass/components/_typography.scss */
+/* line 423, src/sass/components/_typography.scss */
 blockquote:before,
 blockquote:after,
 q:before,

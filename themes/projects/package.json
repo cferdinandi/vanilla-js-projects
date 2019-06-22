@@ -1,7 +1,7 @@
 {
-	"name": "projects",
-	"version": "1.0.0",
-	"description": "The theme for vanillajsprojects.com",
+	"name": "guides",
+	"version": "1.2.0",
+	"description": "The theme for gomakethings.com",
 	"author": {
 		"name": "Chris Ferdinandi",
 		"url": "http://gomakethings.com"
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/cferdinandi/vanilla-js-office-hours"
+		"url": "http://github.com/cferdinandi/vanilla-js-guides"
 	},
 	"devDependencies": {
 		"gulp": "4.0.0",

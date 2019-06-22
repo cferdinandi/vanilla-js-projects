@@ -1,3 +1,4 @@
+{{ if .Get "bundle" }}
 {{ if and (ge (now.Format "20060102") 20181122) (lt (now.Format "20060102") 20181126) }}
 {{ if lt (now.Format "20060102") 20181124 }}
 <h2>🦃 Exclusive Black Friday Sale Bonus Gifts</h2>
@@ -18,4 +19,5 @@
 	<li>Speed up your slow WordPress site with a free copy of my guide and toolkit, <a href="https://gomakethings.com/wicked-fast-websites/">Wicked Fast Websites</a>.</li>
 	<li>Refactor your body with 50% off of any fitness plan from <a href="https://devlifts.io/">DevLifts</a>. Made for developers, by developers.</li>
 </ul>
+{{ end }}
 {{ end }}

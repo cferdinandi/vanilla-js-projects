@@ -1,0 +1,11 @@
+{{ $product := .Site.Data.products.productDetails }}
+{{ if eq ( .Get "package" ) "bundles" }}
+- **[The Complete Set.]({{ $product.complete.url }})** {{ $product.complete.description }}
+{{ end }}
+
+{{ if eq ( .Get "package" ) "complete" }}
+0. **[Fortune Teller.]({{ $product.fortuneTeller.url }})** {{ $product.fortuneTeller.description }}
+0. **[Rock, Paper, Scissors.]({{ $product.rockPaperScissors.url }})** {{ $product.rockPaperScissors.description }}
+0. **[Calculator.]({{ $product.calculator.url }})** {{ $product.calculator.description }}
+0. **[Peg Art Game.]({{ $product.pegArt.url }})** {{ $product.pegArt.description }}
+{{ end }}
