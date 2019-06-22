@@ -1,5 +1,5 @@
 ---
-title: "Fortune Teller"
+title: "Calculator"
 date: 2018-01-16T10:05:20-05:00
 draft: false
 type: "project"
@@ -7,12 +7,12 @@ noTitle: true
 description: ""
 ---
 
-<h1 class="no-padding-top no-margin-bottom h5">Fortune Teller</h1>
-<p><span class="text-xlarge">See into the future by building an app that provides answers to any question.</span></p>
+<h1 class="no-padding-top no-margin-bottom h5">Calculator</h1>
+<p><span class="text-xlarge">Build a calculator app to do simple and complex math for you.</span></p>
 
-<img class="aligncenter" alt="The book cover and project" style="width: 88%;" src="/img/projects/fortune-teller.jpg">
+<img class="aligncenter" alt="The book cover and project" style="width: 88%;" src="/img/projects/calculator.jpg">
 
-<span class="text-large">You'll learn about DOM manipulation, working with arrays, and web accessibility.</span>
+<span class="text-large">You'll learn how to work with strings and numbers, listen for browser events, build accessible web apps.</span>
 
 Get hands-on learning with a real vanilla JavaScript project. You get starter templates, helpful tips and resources, and step-by-step tutorials.
 
@@ -44,13 +44,13 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 {{%purchase-box%}}
 
-Get everything you need to build a fortune teller app:
+Get everything you need to build a working JavaScript calculator app:
 
 {{<purchase-summary>}}{{</purchase-summary>}}
 
 {{<cta for="project-buy">}}
 
-{{<purchase-link product="fortuneTeller">}}
+{{<purchase-link product="calculator">}}
 
 {{<purchase-upsell>}}
 

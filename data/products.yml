@@ -19,10 +19,10 @@ productDetails:
     id: "37213"
     description: "See into the future by building a fortune-teller app that provides answers to any question."
     url: "/fortune-teller/"
-  rocksPaperScissors:
+  rockPaperScissors:
     id: "37215"
     description: "Play even when your friends aren't around by making an interactive JavaScript game."
-    url: "/rocks-paper-scissors/"
+    url: "/rock-paper-scissors/"
   calculator:
     id: "37217"
     description: "Stop counting fingers. Make a calculator app to do simple and complex math for you."
