@@ -12,30 +12,46 @@ description: ""
 
 <span class="text-large">Hands-on learning with real projects. You get starter templates, helpful tips and resources, and step-by-step tutorials.</span>
 
-{{<cta for="projects-all">}}
+<mark>🔥🔥🔥 <strong>Coming soon!</strong> <em>Based on customer feedback, Vanilla JS Projects is going through a complete update. It returns in early July with new projects, a new structure, and a new pricing model.</em></mark>
 
-## Bundles
+{{<pricing-link>}}
 
-<div class="list-spaced">
-{{%md%}}
-{{<product-list package="bundles">}}
-{{%/md%}}
-</div>
+{{<how-it-works>}}
 
-## Individual Projects
+{{<project-formats>}}
 
-<div class="list-spaced">
-{{%md%}}
-{{<product-list package="complete">}}
-{{%/md%}}
-</div>
+{{<testimonial-group group="how-it-works">}}
 
-{{<testimonial-group group="homepage">}}
+{{<bonuses>}}
+
+{{<bonuses-special>}}
+
+{{<pricing-link>}}
+
+{{<testimonial-group group="slack">}}
 
 {{<project-skills>}}
 
 {{<project-money-back>}}
 
 {{<project-about-me>}}
+
+{{%purchase-box%}}
+
+**Vanilla JS Projects returns in early July with new projects, a new structure, and a new pricing model.**
+
+The best way to find out when it launches is to join my daily developer tips newsletter.
+
+{{<mailchimp>}}
+
+{{%/purchase-box%}}
+
+{{<testimonial-group group="purchase">}}
+
+{{<project-faq>}}
+
+{{<pricing-link>}}
+
+{{<testimonial-group group="faq">}}
 
 {{<not-ready-yet>}}
