@@ -12,7 +12,7 @@ description: ""
 
 <span class="text-large">Hands-on learning with real projects. You get starter templates, helpful tips and resources, and step-by-step tutorials.</span>
 
-<mark>🔥🔥🔥 <strong>Coming soon!</strong> <em>Based on customer feedback, Vanilla JS Projects is going through a complete update. It returns in early July with new projects, a new structure, and a new pricing model.</em></mark>
+<mark>🔥🔥🔥 <em><strong>Coming soon!</strong> Based on customer feedback, Vanilla JS Projects is going through a complete update. It returns in early July with new projects, a new structure, and a new pricing model.</em></mark>
 
 {{<pricing-link>}}
 
