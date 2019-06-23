@@ -20,7 +20,11 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 <div class="padding-bottom-small">{{<pricing-link>}}</div>
 
-{{<how-it-works>}}{{</how-it-works>}}
+## The Project
+
+*Details...*
+
+{{<how-it-works>}}
 
 {{<project-formats>}}
 

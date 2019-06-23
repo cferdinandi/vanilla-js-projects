@@ -32,7 +32,7 @@ AND, you'll automatically get any new projects I release in the future, complete
 
 {{<testimonial-group group="how-it-works">}}
 
-{{<how-it-works>}}{{</how-it-works>}}
+{{<how-it-works>}}
 
 {{<bonuses>}}
 
