@@ -16,6 +16,7 @@
 	{{- $apiPrice := index $apiPrices ($.Scratch.Get "type") -}}
 {{- end -}}
 
+{{- if eq $product.ready true -}}
 <div class="row">
 	<div class="grid-half margin-bottom-small">
 		<a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=1">Get the Ebook{{ if .Get "bundle" }}s{{ end }} - {{ if ne $apiPrice "" }}{{ index $apiPrice "ebook" | safeHTML }}{{ else }}{{ $price.ebook | safeHTML }}{{ end }}</a>
@@ -26,3 +27,6 @@
 </div>
 
 <p><a class="btn btn-tertiary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=3">Get the Ebook{{ if .Get "bundle" }}s{{ end }} + the Videos - {{ if ne $apiPrice "" }}{{ index $apiPrice "both" | safeHTML }}{{ else }}{{ $price.both | safeHTML }}{{ end }}</a></p>
+{{- else -}}
+<p><strong><em>Coming soon...</em></strong></p>
+{{- end -}}
