@@ -15,19 +15,24 @@ productDetails:
     id: "37221"
     description: "Every project in the collection, including any new ones that come out in the future."
     url: "/complete-set/"
+    ready: false
   fortuneTeller:
     id: "37213"
     description: "See into the future by building a fortune-teller app that provides answers to any question."
     url: "/fortune-teller/"
+    ready: true
   rockPaperScissors:
     id: "37215"
     description: "Play even when your friends aren't around by making an interactive JavaScript game."
     url: "/rock-paper-scissors/"
+    ready: false
   calculator:
     id: "37217"
     description: "Stop counting fingers. Make a calculator app to do simple and complex math for you."
     url: "/calculator/"
+    ready: false
   pegArt:
     id: "37219"
     description: "Channel your inner artist and build a peg art game. Place colored pegs onto a game board to create beautiful pictures."
     url: "/peg-art-game/"
+    ready: false

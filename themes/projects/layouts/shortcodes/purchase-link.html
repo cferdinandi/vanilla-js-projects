@@ -11,18 +11,37 @@
 
 {{- $data := getJSON $.Site.Params.api -}}
 {{- $apiPrices := index $data "prices" -}}
-{{- $apiPrice := "" -}}
+{{- $.Scratch.Set "apiPrice" "" -}}
 {{- if isset $apiPrices ($.Scratch.Get "type") -}}
-	{{- $apiPrice := index $apiPrices ($.Scratch.Get "type") -}}
+	{{- $.Scratch.Set "apiPrice" (index $apiPrices ($.Scratch.Get "type")) -}}
 {{- end -}}
+
+{{- if eq $product.ready true -}}
 
 <div class="row">
 	<div class="grid-half margin-bottom-small">
-		<a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=1">Get the Ebook{{ if .Get "bundle" }}s{{ end }} - {{ if ne $apiPrice "" }}{{ index $apiPrice "ebook" | safeHTML }}{{ else }}{{ $price.ebook | safeHTML }}{{ end }}</a>
+		<a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=1">Get the Ebook{{ if .Get "bundle" }}s{{ end }} - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "ebook" | safeHTML }}{{ else }}{{ $price.ebook | safeHTML }}{{ end }}</a>
 	</div>
 	<div class="grid-half margin-bottom-small">
-		<a class="btn btn-secondary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=2">Get the Videos - {{ if ne $apiPrice "" }}{{ index $apiPrice "video" | safeHTML }}{{ else }}{{ $price.video | safeHTML }}{{ end }}</a>
+		<a class="btn btn-secondary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=2">Get the Videos - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "video" | safeHTML }}{{ else }}{{ $price.video | safeHTML }}{{ end }}</a>
 	</div>
 </div>
 
-<p><a class="btn btn-tertiary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=3">Get the Ebook{{ if .Get "bundle" }}s{{ end }} + the Videos - {{ if ne $apiPrice "" }}{{ index $apiPrice "both" | safeHTML }}{{ else }}{{ $price.both | safeHTML }}{{ end }}</a></p>
+<p><a class="btn btn-tertiary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=3">Get the Ebook{{ if .Get "bundle" }}s{{ end }} + the Videos - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "both" | safeHTML }}{{ else }}{{ $price.both | safeHTML }}{{ end }}</a></p>
+
+{{- else -}}
+
+<p><strong>Preorder now and get instant access when it's available.</strong> This project is in development and will be completed soon.</p>
+
+<div class="row">
+	<div class="grid-half margin-bottom-small">
+		<a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=1">Preorder the Ebook{{ if .Get "bundle" }}s{{ end }} - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "ebook" | safeHTML }}{{ else }}{{ $price.ebook | safeHTML }}{{ end }}</a>
+	</div>
+	<div class="grid-half margin-bottom-small">
+		<a class="btn btn-secondary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=2">Preorder the Videos - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "video" | safeHTML }}{{ else }}{{ $price.video | safeHTML }}{{ end }}</a>
+	</div>
+</div>
+
+<p><a class="btn btn-tertiary btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=3">Preorder the Ebook{{ if .Get "bundle" }}s{{ end }} + the Videos - {{ if ne ($.Scratch.Get "apiPrice") "" }}{{ index ($.Scratch.Get "apiPrice") "both" | safeHTML }}{{ else }}{{ $price.both | safeHTML }}{{ end }}</a></p>
+
+{{- end -}}
