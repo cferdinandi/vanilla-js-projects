@@ -20,6 +20,12 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 <div class="padding-bottom-small">{{<pricing-link>}}</div>
 
+## The Project
+
+<iframe src="https://player.vimeo.com/video/345929071?color=0088cc&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="640" height="343" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+When this project is done, you'll be able to type a question into a field in your app, click *Ask the Fortune Teller*, and get back one a handful of yes/no/maybe responses.
+
 {{<how-it-works>}}
 
 {{<project-formats>}}

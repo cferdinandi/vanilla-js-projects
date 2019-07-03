@@ -20,6 +20,12 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 <div class="padding-bottom-small">{{<pricing-link>}}</div>
 
+## The Project
+
+<iframe src="https://player.vimeo.com/video/345936126?color=0088cc&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+When this project is done, you'll be able to select colors and place them onto a peg art board to create artwork. You'll also be able to remove individual pegs, and clear the whole board.
+
 {{<how-it-works>}}
 
 {{<project-formats>}}

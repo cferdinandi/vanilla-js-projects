@@ -20,6 +20,12 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 <div class="padding-bottom-small">{{<pricing-link>}}</div>
 
+## The Project
+
+<iframe src="https://player.vimeo.com/video/345931212?color=0088cc&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="640" height="374" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+When this project is done, you'll be able to pick rock, paper, or scissors, get randomly matched up against one of those options, and be shown a win/lose/tie message.
+
 {{<how-it-works>}}
 
 {{<project-formats>}}

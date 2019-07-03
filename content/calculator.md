@@ -20,6 +20,12 @@ Get hands-on learning with a real vanilla JavaScript project. You get starter te
 
 <div class="padding-bottom-small">{{<pricing-link>}}</div>
 
+## The Project
+
+<iframe src="https://player.vimeo.com/video/345932240?color=0088cc&title=0&byline=0&portrait=0&autoplay=1&loop=1" width="640" height="557" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+When this project is done, you'll be able to click buttons on your calculator app to add, subtract, multiply and divide numbers. You'll also be able to backspace if you mistype a number, and clear out the calculator to start over.
+
 {{<how-it-works>}}
 
 {{<project-formats>}}
