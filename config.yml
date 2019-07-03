@@ -3,7 +3,7 @@ baseURL: "https://vanillajsprojects.com"
 
 # Customer parameters
 params:
-  description: "Short, focused vanilla JS ebooks and video courses made for beginners. Start building real JavaScript projects in under an hour."
+  description: "Learn JavaScript by making things. You get starter templates, helpful tips and resources, and step-by-step tutorials."
   api: "https://gomakethings.com/api/data.json"
   font: "https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap"
   rssURL: "https://gomakethings.com/feed/index.xml"
