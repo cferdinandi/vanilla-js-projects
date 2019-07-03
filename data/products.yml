@@ -5,9 +5,9 @@ price:
     video: "$69"
     both: "$74"
   projectsComplete:
-    ebook: "<del>$79</del> $55"
-    video: "<del>$189</del> $125"
-    both: "<del>$207</del> $145"
+    ebook: "$79"
+    video: "$189"
+    both: "$207"
 
 # Product Details
 productDetails:
@@ -15,7 +15,7 @@ productDetails:
     id: "37221"
     description: "Every project in the collection, including any new ones that come out in the future."
     url: "/complete-set/"
-    ready: true
+    ready: false
   fortuneTeller:
     id: "37213"
     description: "See into the future by building a fortune-teller app that provides answers to any question."
@@ -25,7 +25,7 @@ productDetails:
     id: "37215"
     description: "Play even when your friends aren't around by making an interactive JavaScript game."
     url: "/rock-paper-scissors/"
-    ready: true
+    ready: false
   calculator:
     id: "37217"
     description: "Stop counting fingers. Make a calculator app to do simple and complex math for you."
