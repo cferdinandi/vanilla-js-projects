@@ -26,10 +26,10 @@ productDetails:
     description: "Play even when your friends aren't around by making an interactive JavaScript game."
     url: "/rock-paper-scissors/"
     ready: false
-  calculator:
+  drumMachine:
     id: "37217"
-    description: "Stop counting fingers. Make a calculator app to do simple and complex math for you."
-    url: "/calculator/"
+    description: "Make, record, and loop your own beats by building a drum machine app."
+    url: "/drum-machine/"
     ready: false
   pegArt:
     id: "37219"
