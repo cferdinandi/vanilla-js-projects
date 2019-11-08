@@ -36,7 +36,8 @@ AND, you'll automatically get any new projects I release in the future, complete
 
 {{<bonuses>}}
 
-{{<bonuses-special bundle="true">}}
+{{<cta for="bonusesProjects">}}
+{{<cta for="bonusesList">}}
 
 {{<pricing-link>}}
 

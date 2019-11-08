@@ -34,8 +34,6 @@ When this project is done, you'll be able to pick rock, paper, or scissors, get 
 
 {{<bonuses>}}
 
-{{<bonuses-special>}}
-
 {{<pricing-link>}}
 
 {{<testimonial-group group="slack">}}

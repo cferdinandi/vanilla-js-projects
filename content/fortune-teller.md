@@ -34,8 +34,6 @@ When this project is done, you'll be able to type a question into a field in you
 
 {{<bonuses>}}
 
-{{<bonuses-special>}}
-
 {{<pricing-link>}}
 
 {{<testimonial-group group="slack">}}

@@ -34,8 +34,6 @@ When this project is done, you'll be able to select colors and place them onto a
 
 {{<bonuses>}}
 
-{{<bonuses-special>}}
-
 {{<pricing-link>}}
 
 {{<testimonial-group group="slack">}}

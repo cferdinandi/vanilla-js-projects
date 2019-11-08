@@ -34,8 +34,6 @@ When this project is done, you'll be able to make your own beats by pressing key
 
 {{<bonuses>}}
 
-{{<bonuses-special>}}
-
 {{<pricing-link>}}
 
 {{<testimonial-group group="slack">}}
