@@ -1,15 +1,16 @@
-{{- $product := index .Site.Data.products.productDetails ( .Get "product" ) -}}
-{{- $.Scratch.Set "price" .Site.Data.products.price.projects -}}
+{{- $data := getJSON $.Site.Params.api -}}
+
+{{- $product := index $data.products.projectDetails ( .Get "product" ) -}}
+{{- $.Scratch.Set "price" $data.products.projects -}}
 {{- $.Scratch.Set "type" "projects-individual" -}}
 {{- if .Get "bundle" -}}
 	{{- if eq ( .Get "bundle" ) "complete" -}}
-		{{- $.Scratch.Set "price" .Site.Data.products.price.projectsComplete -}}
+		{{- $.Scratch.Set "price" $data.products.projectsComplete -}}
 		{{- $.Scratch.Set "type" "projects-complete" -}}
 	{{- end -}}
 {{- end -}}
 {{- $price := ( $.Scratch.Get "price" ) -}}
 
-{{- $data := getJSON $.Site.Params.api -}}
 {{- $apiPrices := index $data "prices" -}}
 {{- $.Scratch.Set "apiPrice" "" -}}
 {{- if isset $apiPrices ($.Scratch.Get "type") -}}
