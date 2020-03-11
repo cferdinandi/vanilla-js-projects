@@ -1,14 +1,13 @@
 # hostname (and path) to the root
-baseURL: "https://vanillajsprojects.com"
+baseURL: "http://vanillajsprojects.com"
 
 # Customer parameters
 params:
-  description: "Learn JavaScript by making things. You get starter templates, helpful tips and resources, and step-by-step tutorials."
+  description: "A free collection of vanilla JS project ideas and starter templates."
   api: "https://gomakethings.com/api/data.json"
   font: "https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap"
-  rssURL: "https://gomakethings.com/feed/index.xml"
+  rssURL: ""
   rssLimit: 7
-  studentURL: "https://courses.gomakethings.com"
   minify: true
 
 # Caches
@@ -23,15 +22,12 @@ languageCode: "en-us"
 title: "Vanilla JS Projects"
 
 # theme to use (located by default in /themes/THEMENAME/)
-theme: "projects"
+theme: "vanillajs"
 
 # Permalinks
 # See "content-management/permalinks"
-permalinks:
-  projects: /:title/
-
-# Use absolute URLs
-canonifyURLs: true
+# permalinks:
+#   roadmap: /:title/
 
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"

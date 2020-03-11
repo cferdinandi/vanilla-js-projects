@@ -1,41 +1,25 @@
 ---
-title: "Projects"
-date: 2018-01-16T10:05:20-05:00
+title: "Vanilla JS Projects"
+date: 2018-01-14T21:38:44-05:00
 draft: false
-type: "project"
 noTitle: true
-description: ""
+fullWidth: false
 ---
 
-<h1 class="no-padding-top no-margin-bottom h5">Vanilla JavaScript Projects</h1>
-<p class="text-xlarge margin-bottom-small">Learn JavaScript by making things.</p>
+<h1 class="text-xlarge margin-bottom-small">Vanilla JS projects</h1>
 
-<span class="text-large">Hands-on learning with real projects. You get starter templates, helpful tips and resources, and step-by-step tutorials.</span>
+<p class="text-large">{{%md%}}A free collection of vanilla JS project ideas and starter templates.{{%/md%}}</p>
 
-{{<cta for="projects-all">}}
+*__Vanilla JS__ is a term for coding with native JavaScript features and browser APIs instead of frameworks and libraries.*
 
-## Bundles
+{{<cta for="learnvjs-home">}}
 
-<div class="list-spaced">
-{{%md%}}
-{{<product-list package="bundles">}}
-{{%/md%}}
+<a class="btn btn-large" href="/projects">Get Started &rarr;</a>
+
+<div class="padding-top-large padding-bottom-large">
+	{{<testimonial for="jonathanStark2" photo="true">}}
 </div>
 
-## Individual Projects
+{{<mailchimp intro="true">}}
 
-<div class="list-spaced">
-{{%md%}}
-{{<product-list package="complete">}}
-{{%/md%}}
-</div>
-
-{{<testimonial-group group="homepage">}}
-
-{{<project-skills>}}
-
-{{<project-money-back>}}
-
-{{<project-about-me>}}
-
-{{<not-ready-yet>}}
+{{<about-me>}}

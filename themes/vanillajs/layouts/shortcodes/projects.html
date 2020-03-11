@@ -1,0 +1,10 @@
+{{- $projects := .Site.Data.projects -}}
+
+{{- if index $projects (.Get "difficulty") -}}
+{{- range (index $projects (.Get "difficulty")) -}}
+	<article id="{{ .name | anchorize }}">
+		<strong><a href="{{ .url }}">{{ .name }}</a></strong>
+		<p>{{ .description | markdownify }}</p>
+	</article>
+{{- end -}}
+{{- end -}}
