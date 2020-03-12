@@ -2,6 +2,14 @@
 ## Projects
 ##
 
+tags:
+    dom: "DOM Manipulation"
+    webApp: "Web App"
+    stringsNumbers: "Strings & Numbers"
+    arraysObjects: "Arrays & Objects"
+    apis: "APIs"
+    browserStorage: "Browser Storage"
+
 beginner:
 
     showAndHide:
@@ -9,86 +17,80 @@ beginner:
         description: "Write a script that can be used to show/hide content when users click a button."
         url: "https://gist.github.com/cferdinandi/3f90b47bf442512d555211c38ff8e569"
         topics:
-            - DOM Manipulation
+            - dom
 
     accordion:
         name: "Accordion"
         description: "Write a script that can be used to convert a collection of headings and content into a show/hide accordion."
         url: "https://gist.github.com/cferdinandi/d30b60c0cbbb437120f9d367a1a49760"
         topics:
-            - DOM Manipulation
-            - DOM Traversal
+            - dom
 
     passwordVisibility:
         name: "Toggle Password Visibility"
         description: "Write a script that can be used to toggle the visibility of password fields."
         url: "https://gist.github.com/cferdinandi/36a9576625cae049a9ebe7e01d60d2db"
         topics:
-            - DOM Manipulation
+            - dom
 
     tempApp:
         name: "Temperature Converter App"
         description: "Write an app that converts Farenheit to Celcius and back."
         url: "https://gist.github.com/cferdinandi/11e34298213062660c2f3a2568660213"
         topics:
-            - DOM Manipulation
-            - Web Apps
+            - dom
+            - webApp
 
     toc:
         name: "Table of Contents Component"
         description: "Write a script that generates a table of contents from the headings in a document."
         url: "https://gist.github.com/cferdinandi/ad092af3f469bcc871436a593f54e33f"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - DOM Traversal
+            - dom
+            - arraysObjects
+            - stringsNumbers
 
     randomQuote:
         name: "Random Quote App"
         description: "Write a script that gets a random quote from an API and renders it into the DOM."
         url: "https://gist.github.com/cferdinandi/b6e24d347d59e7029c3c41398318bf20"
         topics:
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - APIs
+            - arraysObjects
+            - apis
 
     topStories:
         name: "Top Stories from the NYT"
         description: "Write a script that gets the top five stories for the day from the *New York Times* using the NYT API."
         url: "https://gist.github.com/cferdinandi/c17df25b0826b529643743bc71d1eaec"
         topics:
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - APIs
+            - arraysObjects
+            - apis
 
     wordCount:
         name: "Word Count App"
         description: "Write a script that displays the number of words in a block of text in real time as the user types."
         url: "https://gist.github.com/cferdinandi/2d47e9e83f33f526eab50b5474a9787c"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - Web Apps
+            - dom
+            - stringsNumbers
+            - webApp
 
     mirror:
         name: "Mirror Text"
         description: "Write a script that shows content typed into a field into another element."
         url: "https://gist.github.com/cferdinandi/6c842518ce8df6bd6c229783019c0d08"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
+            - dom
+            - stringsNumbers
 
     githubRepos:
         name: "GitHub Repos"
         description: "Use the GitHub API to get a list of repositories for a user and list them on a web page."
         url: "https://gist.github.com/cferdinandi/876b2201a6d91db8495d7ec4edfc4f82"
         topics:
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - APIs
+            - arraysObjects
+            - dom
+            - apis
 
 
 advanced:
@@ -98,100 +100,99 @@ advanced:
         description: "Write an app that gets the current weather in the visitor's location and displays it in the DOM."
         url: "https://gist.github.com/cferdinandi/0d199802910e220085493fbe19882ce5"
         topics:
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - APIs
-            - Web Apps
+            - arraysObjects
+            - stringsNumbers
+            - dom
+            - apis
+            - webApp
 
     toggleTab:
         name: "Toggle Tab Component"
         description: "Write a script that converts a list of anchor links into toggle tabs. When a user clicks one of the links, the linked content becomes visible, while other content areas become hidden."
         url: "https://gist.github.com/cferdinandi/7207b16cfee0b73c86797daba4b95ff1"
         topics:
-            - DOM Manipulation
+            - dom
 
     lazyLoad:
         name: "Image Lazy Loader"
         description: "Write a script that lazy loads images as the user scrolls down the page."
         url: "https://gist.github.com/cferdinandi/67d6efea2019bd3f4f69f4f70a9f3a1e"
         topics:
-            - DOM Manipulation
-            - DOM Injection
-            - DOM Traversal
+            - dom
 
     formSaver:
         name: "Form Saver"
         description: "Write a script that automatically saves a user's form inputs as they type and reloads them into the form when they come back to the page. Clear the saved data when the form is submitted."
         url: "https://gist.github.com/cferdinandi/e7ef9673fa081290bdb1d33fe46087f6"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - Browser Storage
+            - dom
+            - arraysObjects
+            - stringsNumbers
+            - browserStorage
 
     progressBar:
         name: "Progress Bar"
         description: "Write a script that displays and updates a progress bar as the user completes fields in a form."
         url: "https://gist.github.com/cferdinandi/12c50d0b796fd3b733b8bb87d21d071d"
         topics:
-            - DOM Manipulation
+            - dom
 
     filters:
         name: "Checkbox Filters"
         description: "Write a script that filters songs from a playlist by genre and whether or not the song is Grammy-nominated."
         url: "https://gist.github.com/cferdinandi/340700d063ba9eb23099389c8d94de9a"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - Browser Storage
+            - dom
+            - arraysObjects
+            - browserStorage
 
     countdown:
         name: "Countdown Timer App"
         description: "Write an app that counts down to 0 from a time (say, five minutes)."
         url: "https://gist.github.com/cferdinandi/795c87138f65911aefa44eb1e21bd8bf"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - Web Apps
+            - dom
+            - stringsNumbers
+            - webApp
 
     todo:
         name: "Todo App"
         description: "Write a todo list app. Users should be able to create lists, add items to each one, and mark items as complete."
         url: "https://gist.github.com/cferdinandi/28e8d21c47d1d4e703c0bfee310d60b2"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - Browser Storage
-            - Web Apps
+            - dom
+            - arraysObjects
+            - stringsNumbers
+            - browserStorage
+            - webApp
 
     picker:
         name: "Randomize"
         description: "Write an app that randomly picks an option for a list of choices. Users should be able to add and delete items from the list."
         url: "https://gist.github.com/cferdinandi/6bba5ba21564e090d158178caf8a2104"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - Browser Storage
-            - Web Apps
+            - dom
+            - stringsNumbers
+            - arraysObjects
+            - browserStorage
+            - webApp
 
     monsters:
         name: "Avoid the Monster Game"
         description: "Build a game inspired by the movie Monsters, Inc. and loosely based on the old PC game Minesweeper. Find monster friends behind closed doors, but avoid the sock!"
         url: "https://gist.github.com/cferdinandi/dcfa502b5502d9f931be0f28e3d31bf3"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - Web Apps
+            - dom
+            - arraysObjects
+            - stringsNumbers
+            - webApp
 
     adopt:
         name: "Find a Pet App"
         description: "Use the Petfinder API to get a list of available pets from a shelter and display them on a web page."
         url: "https://gist.github.com/cferdinandi/1b55046764aef0cac54d927facb4b0a0"
         topics:
-            - DOM Manipulation
-            - Strings, Arrays, and Objects
-            - DOM Injection
-            - APIs
+            - dom
+            - arraysObjects
+            - stringsNumbers
+            - apis

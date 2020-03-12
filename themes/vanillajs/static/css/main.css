@@ -1607,6 +1607,19 @@ button:-moz-focusring,
 }
 
 /**
+ * @section Labels
+ */
+/* line 5, src/sass/components/_labels.scss */
+.topic {
+  font-size: 0.8125em;
+  color: #ffffff;
+  background-color: #0088cc;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  border-radius: 1px;
+}
+
+/**
  * @section Honeypot
  * Styling for honeypot fields
  */

@@ -15,3 +15,8 @@ if (document.querySelector('#mailchimp-form')) {
 if (document.body.matches('.js-anchors')) {
 	addHeadingLinks('h2, h3, h4, h5, h6', '#', 'link-no-underline');
 }
+
+// Filter topics
+if (document.querySelector('[data-filter]')) {
+	filterTopics();
+}

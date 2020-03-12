@@ -1,0 +1,14 @@
+{{- $projects := .Site.Data.projects -}}
+
+<details>
+	<summary class="margin-bottom-small"><strong>Filter by Topic</strong></summary>
+	<ul class="list-inline">
+	{{- range $key, $val := (index $projects "tags") -}}
+		<li>
+			<label for="topic-filter-{{ $key }}">
+				<input type="checkbox" id="topic-filter-{{ $key }}" data-filter=".project-{{ $key }}" checked> {{ $val }}
+			</label>
+		</li>
+	{{- end -}}
+	</ul>
+</details>

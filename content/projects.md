@@ -13,6 +13,8 @@ Here are some projects ideas, with templates and instructions to help you get st
 
 {{<cta for="learnvjs-projects">}}
 
+{{<projects-filter>}}
+
 ## Beginner Projects
 
 {{<projects difficulty="beginner">}}

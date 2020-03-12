@@ -13,6 +13,66 @@
 if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
+var filterTopics = function () {
+
+	'use strict';
+
+	//
+	// Variables
+	//
+
+	var checkboxes = document.querySelectorAll('[data-filter]');
+	var projects = document.querySelectorAll('.project');
+
+
+	//
+	// Methods
+	//
+
+	var hideProjects = function () {
+		Array.prototype.forEach.call(projects, (function (project) {
+			project.setAttribute('hidden', '');
+		}));
+	};
+
+	var showProjects = function () {
+		Array.prototype.forEach.call(checkboxes, (function (checkbox) {
+
+			// If not checked, ignore
+			if (!checkbox.checked) return;
+
+			// Show projects for this topic
+			var filteredProjects = document.querySelectorAll(checkbox.getAttribute('data-filter'));
+			Array.prototype.forEach.call(filteredProjects, (function (project) {
+				project.removeAttribute('hidden');
+			}));
+
+		}));
+	};
+
+	var filterProjects = function () {
+		hideProjects();
+		showProjects();
+	};
+
+	var clickHandler = function (event) {
+
+		// Get the filter class
+		if (!event.target.hasAttribute('data-filter')) return;
+
+		// Filter projects
+		filterProjects();
+
+	};
+
+
+	//
+	// Event Handlers
+	//
+
+	document.addEventListener('click', clickHandler, false);
+
+};
 /**
  * Add links to headings
  * @param {String} selector The headings to get in the DOM (uses querySelectorAll)
@@ -264,4 +324,9 @@ if (document.querySelector('#mailchimp-form')) {
 // Anchor links on posts
 if (document.body.matches('.js-anchors')) {
 	addHeadingLinks('h2, h3, h4, h5, h6', '#', 'link-no-underline');
+}
+
+// Filter topics
+if (document.querySelector('[data-filter]')) {
+	filterTopics();
 }
