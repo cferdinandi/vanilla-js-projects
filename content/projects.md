@@ -11,7 +11,7 @@ The best way to learn JavaScript is by writing lots of code, but coming up with 
 
 Here are some projects ideas, with templates and instructions to help you get started.
 
-{{<cta for="learnvjs-projects">}}
+{{<cta for="funnel">}}
 
 {{<projects-filter>}}
 
