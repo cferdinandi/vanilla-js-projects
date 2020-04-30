@@ -10,6 +10,10 @@
 		Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 	}
 
+	/**
+	 *
+	 * @param {Function} callback
+	 */
 	var mailchimp = function (callback) {
 
 
@@ -225,23 +229,23 @@
 	 * @param {String} content  The content to add to the anchor link [default: #]
 	 * @param {String} styles   The class(es) to add to the link [default: anchor-link]
 	 */
-	var addHeadingLinks = function (selector, content, styles) {
+	 var addHeadingLinks = function (selector, content, styles) {
 
-		// Make sure a selector was provided
-		if (!selector) return;
+	 	// Make sure a selector was provided
+	 	if (!selector) return;
 
-		// Variables
-		var headings = document.querySelectorAll(selector);
-		content = content || '#';
-		styles = styles || 'anchor-link';
+	 	// Variables
+	 	var headings = document.querySelectorAll(selector);
+	 	content = content || '#';
+	 	styles = styles || 'anchor-link';
 
-		// Loop through each heading and add an anchor link
-		for (var i = 0; i < headings.length; i++) {
-			if (!headings[i].id) continue;
-			headings[i].innerHTML += ' <a class="' + styles + '" href="#' + headings[i].id + '">' + content + '</a>';
-		}
+	 	// Loop through each heading and add an anchor link
+	 	for (var i = 0; i < headings.length; i++) {
+	 		if (!headings[i].id) continue;
+	 		headings[i].innerHTML += ' <a class="' + styles + '" href="#' + headings[i].id + '">' + content + '</a>';
+	 	}
 
-	};
+	 };
 
 	var filterTopics = function () {
 
