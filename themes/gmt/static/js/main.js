@@ -1,4 +1,4 @@
-/*! learn-vanilla-js v1.0.0 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/learn-vanilla-js */
+/*! learn-vanilla-js v1.0.0 | (c) 2021 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/learn-vanilla-js */
 (function () {
 	'use strict';
 
@@ -209,88 +209,8 @@
 
 	};
 
-	/**
-	 * Add links to headings
-	 * @param {String} selector The headings to get in the DOM (uses querySelectorAll)
-	 * @param {String} content  The content to add to the anchor link [default: #]
-	 * @param {String} styles   The class(es) to add to the link [default: anchor-link]
-	 */
-	 var addHeadingLinks = function (selector, content, styles) {
-
-	 	// Make sure a selector was provided
-	 	if (!selector) return;
-
-	 	// Variables
-	 	var headings = document.querySelectorAll(selector);
-	 	content = content || '#';
-	 	styles = styles || 'anchor-link';
-
-	 	// Loop through each heading and add an anchor link
-	 	for (var i = 0; i < headings.length; i++) {
-	 		if (!headings[i].id) continue;
-	 		headings[i].innerHTML += ' <a class="' + styles + '" href="#' + headings[i].id + '">' + content + '</a>';
-	 	}
-
-	 };
-
-	var filterTopics = function () {
-
-		//
-		// Variables
-		//
-
-		var checkboxes = document.querySelectorAll('[data-filter]');
-		var projects = document.querySelectorAll('.project');
-
-
-		//
-		// Methods
-		//
-
-		var hideProjects = function () {
-			Array.prototype.forEach.call(projects, function (project) {
-				project.setAttribute('hidden', '');
-			});
-		};
-
-		var showProjects = function () {
-			Array.prototype.forEach.call(checkboxes, function (checkbox) {
-
-				// If not checked, ignore
-				if (!checkbox.checked) return;
-
-				// Show projects for this topic
-				var filteredProjects = document.querySelectorAll(checkbox.getAttribute('data-filter'));
-				Array.prototype.forEach.call(filteredProjects, function (project) {
-					project.removeAttribute('hidden');
-				});
-
-			});
-		};
-
-		var filterProjects = function () {
-			hideProjects();
-			showProjects();
-		};
-
-		var clickHandler = function (event) {
-
-			// Get the filter class
-			if (!event.target.hasAttribute('data-filter')) return;
-
-			// Filter projects
-			filterProjects();
-
-		};
-
-
-		//
-		// Event Handlers
-		//
-
-		document.addEventListener('click', clickHandler, false);
-
-	};
+	// import addHeadingLinks from '../../../../../gmt-theme/dist/js/heading-links.js';
+	// import filterTopics from './main-components/filters.js';
 
 	// Mailchimp form
 	if (document.querySelector('#mailchimp-form')) {
@@ -301,14 +221,14 @@
 		});
 	}
 
-	// Anchor links on posts
-	if (document.body.matches('.js-anchors')) {
-		addHeadingLinks('h2, h3, h4, h5, h6', '#', 'link-no-underline');
-	}
+	// // Anchor links on posts
+	// if (document.body.matches('.js-anchors')) {
+	// 	addHeadingLinks('h2, h3, h4, h5, h6', '#', 'link-no-underline');
+	// }
 
-	// Filter topics
-	if (document.querySelector('[data-filter]')) {
-		filterTopics();
-	}
+	// // Filter topics
+	// if (document.querySelector('[data-filter]')) {
+	// 	filterTopics();
+	// }
 
 }());
