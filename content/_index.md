@@ -43,4 +43,4 @@ The best way to learn JavaScript is by writing lots of code, but coming up with 
 {{<mailchimp intro="true">}}
 
 
-{{<about-me>}}
+{{<cta for="bio-short">}}
