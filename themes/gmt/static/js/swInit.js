@@ -1,4 +1,4 @@
-/*! learn-vanilla-js v1.0.0 | (c) 2022 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/learn-vanilla-js */
+/*! guides v2.0.0 | (c) 2022 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/vanilla-js-guides */
 (function () {
 	'use strict';
 

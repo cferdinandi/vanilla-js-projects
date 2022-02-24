@@ -1,0 +1,34 @@
+{{- $data := getJSON $.Site.Params.api -}}
+
+{{- $product := index $.Site.Data.products ( .Get "product" ) -}}
+{{- $.Scratch.Set "price" $data.products.projects -}}
+{{- $.Scratch.Set "type" "projects-individual" -}}
+{{- if eq (.Get "product") "starter" -}}
+	{{- $.Scratch.Set "price" $data.products.projectsStarter -}}
+	{{- $.Scratch.Set "type" "projects-starter" -}}
+{{- else if eq (.Get "product") "complete" -}}
+	{{- $.Scratch.Set "price" $data.products.projectsComplete -}}
+	{{- $.Scratch.Set "type" "projects-complete" -}}
+{{- else if .Get "bundle" -}}
+	{{- $.Scratch.Set "price" $data.products.projectsBundle -}}
+	{{- $.Scratch.Set "type" "projects-bundle" -}}
+{{- end -}}
+{{- $price := ( $.Scratch.Get "price" ) -}}
+
+{{- $apiPrices := index $data "prices" -}}
+{{- $.Scratch.Set "apiPrice" "" -}}
+{{- if isset $apiPrices ($.Scratch.Get "type") -}}
+	{{- $.Scratch.Set "apiPrice" (index $apiPrices ($.Scratch.Get "type")) -}}
+{{- end -}}
+{{- $apiPrice := $.Scratch.Get "apiPrice" -}}
+
+{{- $.Scratch.Set "apiDiscount" "" -}}
+{{- if and (ne (.Scratch.Get "apiPrice") "") (isset (.Scratch.Get "apiPrice") "discount") -}}
+	{{- .Scratch.Set "apiDiscount" (index (.Scratch.Get "apiPrice") "discount") -}}
+{{- end -}}
+
+<p {{- if and (.Get "bundle") (isset $product "monthly") -}}class="margin-bottom-small"{{- end -}}><a class="btn btn-large btn-block edd-buy-now-button" href='https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.id }}&edd_options[price_id]=1{{ if ne (.Scratch.Get "apiDiscount") "" }}&discount={{ .Scratch.Get "apiDiscount" }}{{ end }}'>Get the {{ if eq (.Get "product") "starter" }}JavaScript Projects {{ end }}{{ $product.name }}{{ if eq ($.Scratch.Get "type") "projects-individual" }} Project{{ end }} - {{ if ne $apiPrice "" }}{{ $apiPrice | safeHTML }}{{ else }}{{ $price.price | safeHTML }}{{ end }}</a></p>
+
+{{- if and (.Get "bundle") (isset $product "monthly") -}}
+	<p class="text-center"><a href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $product.monthly }}&edd_options[price_id]=1{{ if ne (.Scratch.Get "apiDiscount") "" }}&discount={{ .Scratch.Get "apiDiscount" }}{{ end }}">Or make three monthly payments of {{ if ne $apiPrice "" }}{{ index $apiPrice "monthly" | safeHTML }}{{ else }}{{ $price.monthly | safeHTML }}{{ end }}</a></p>
+{{- end -}}

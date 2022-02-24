@@ -1,32 +1,40 @@
 # hostname (and path) to the root
 baseURL: "https://vanillajsprojects.com"
 
+# Site title
+title: "Vanilla JS Projects"
+
 # Customer parameters
 params:
-  description: "A free collection of vanilla JS project ideas and starter templates."
+  description: "Self-paced vanilla JavaScript projects for beginners."
   api: "https://gomakethings.com/api/data.json"
-  rssURL: ""
-  rssLimit: 7
-  minify: true
+  sales: "https://gomakethings.com/checkout/wp-json/gmt-edd/v1/sales?category=projects&start=02-24-2022&round=10&96gdGDPqokbFsy3Lbx7LwTBdYNDxpo4a=GbwzXPHRqqCDKyy38TYmAybvV8AZZUJHmuA8zKKMjJ2ZUXFG7LcCy2rLAMmU8HEZ"
+  rssURL: "https://gomakethings.com/feed/index.xml"
+  rssLimit: 8
+  minify: false
 
 # Caches
 caches:
   getjson:
-    maxAge: "10m"
+    maxAge: "1m"
 
 # The language code for the site
 languageCode: "en-us"
 
-# Site title
-title: "Vanilla JS Projects"
-
 # theme to use (located by default in /themes/THEMENAME/)
 theme: "gmt"
 
+Language:
+  LanguageName: "English"
+
 # Permalinks
 # See "content-management/permalinks"
-# permalinks:
-#   roadmap: /:title/
+permalinks:
+  articles: /:title/
+  projects: /:filename/
+
+# Use absolute URLs
+canonifyURLs: true
 
 # Allows you to disable all page types and will render nothing related to 'kind';
 # values = "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404"
