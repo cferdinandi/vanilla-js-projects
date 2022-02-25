@@ -17,6 +17,8 @@ description: ""
 
 {{<purchase-link product="starter">}}
 
+{{<how-it-works>}}
+
 <!-- ## Bundles
 
 <div class="list-spaced-small">

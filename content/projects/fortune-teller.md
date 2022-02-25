@@ -19,10 +19,6 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<used-by>}}
 
-## The Project
-
-<!-- @TODO: Video Here -->
-
 {{<how-it-works>}}
 
 ## What You'll Learn
@@ -37,6 +33,14 @@ This project includes a few short lessons and a starting template. Try to comple
 {{<formats>}}
 
 {{<testimonial-group group="learn">}}
+
+## The Project
+
+<iframe src="https://player.vimeo.com/video/681935507?h=065469782f&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+When users click the button to get their fortune, you'll show a mysterious loading message, and then display a random fortune into the UI.
+
+{{<pricing-link>}}
 
 <!-- {{<bonuses promo="true">}}
 
@@ -55,7 +59,7 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<cta for="bio">}}
 
-{{%purchase-box%}}
+{{%purchase-box promo="true"%}}
 
 Get everything you need to build a Fortune Teller App as part of the FREE JavaScript Projects Starter Bundle.
 

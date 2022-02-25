@@ -19,10 +19,6 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<used-by>}}
 
-## The Project
-
-<!-- @TODO: Video Here -->
-
 {{<how-it-works>}}
 
 ## What You'll Learn
@@ -38,6 +34,14 @@ This project includes a few short lessons and a starting template. Try to comple
 {{<formats>}}
 
 {{<testimonial-group group="learn">}}
+
+## The Project
+
+<iframe src="https://player.vimeo.com/video/681935535?h=213740c5ca&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+When the page loads, you'll get all of the heading elements, and generate a dynamic table of contents from them. Clicking on a link in the table of contents will scroll you down to the associated heading.
+
+{{<pricing-link>}}
 
 <!-- {{<bonuses promo="true">}}
 
@@ -56,7 +60,7 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<cta for="bio">}}
 
-{{%purchase-box%}}
+{{%purchase-box promo="true"%}}
 
 Get everything you need to build a Table of Contents library as part of the FREE JavaScript Projects Starter Bundle.
 

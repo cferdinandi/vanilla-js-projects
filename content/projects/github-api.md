@@ -19,10 +19,6 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<used-by>}}
 
-## The Project
-
-<!-- @TODO: Video Here -->
-
 {{<how-it-works>}}
 
 ## What You'll Learn
@@ -39,6 +35,14 @@ This project includes a few short lessons and a starting template. Try to comple
 {{<formats>}}
 
 {{<testimonial-group group="learn">}}
+
+## The Project
+
+<p class="no-margin-bottom"><img alt="" src="/img/projects/github-api.png"></p>
+
+You'll use two GitHub APIs&mdash;the Users API and the Repos API&mdash;to get data from GitHub. Then, you'll sort and modify the repository data to display a list of your most popular repos along with some profile information in the UI.
+
+{{<pricing-link>}}
 
 <!-- {{<bonuses promo="true">}}
 
@@ -57,7 +61,7 @@ This project includes a few short lessons and a starting template. Try to comple
 
 {{<cta for="bio">}}
 
-{{%purchase-box%}}
+{{%purchase-box promo="true"%}}
 
 Get everything you need to show your most popular repositories using the GitHub API as part of the FREE JavaScript Projects Starter Bundle.
 
