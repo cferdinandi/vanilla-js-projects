@@ -8,7 +8,7 @@ title: "Vanilla JS Projects"
 params:
   description: "Self-paced vanilla JavaScript projects for beginners."
   api: "https://gomakethings.com/api/data.json"
-  sales: "https://gomakethings.com/checkout/wp-json/gmt-edd/v1/sales?category=projects&start=02-24-2022&round=10&96gdGDPqokbFsy3Lbx7LwTBdYNDxpo4a=GbwzXPHRqqCDKyy38TYmAybvV8AZZUJHmuA8zKKMjJ2ZUXFG7LcCy2rLAMmU8HEZ"
+  sales: "https://gomakethings.com/checkout/wp-json/gmt-edd/v1/sales?category=projects&start=02-01-2022&round=10&96gdGDPqokbFsy3Lbx7LwTBdYNDxpo4a=GbwzXPHRqqCDKyy38TYmAybvV8AZZUJHmuA8zKKMjJ2ZUXFG7LcCy2rLAMmU8HEZ"
   rssURL: "https://gomakethings.com/feed/index.xml"
   rssLimit: 8
   minify: false
@@ -30,7 +30,6 @@ Language:
 # Permalinks
 # See "content-management/permalinks"
 permalinks:
-  articles: /:title/
   projects: /:filename/
 
 # Use absolute URLs
