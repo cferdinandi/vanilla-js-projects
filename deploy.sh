@@ -1,1 +1,1 @@
-git add . && git commit -a -m "Updated guides" && git push origin master
+git add . && git commit -a -m "Updated sales page" && git push origin master
