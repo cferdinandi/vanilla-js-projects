@@ -6,7 +6,7 @@
 	<h2 class="h3">Join today for free!</h2>
 {{ end }}
 
-	<p><a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $projects.id }}&edd_options[price_id]=1">Get the JavaScript Projects Bundle for {{ $projects.price | safeHTML }}</a></p>
+	<p><a class="btn btn-large btn-block edd-buy-now-button" href="https://gomakethings.com/checkout?edd_action=add_to_cart&download_id={{ $projects.id }}&edd_options[price_id]=1">Get the JavaScript Projects Bundle for&nbsp;{{ $projects.price | safeHTML }}</a></p>
 	{{ partial "sales-numbers" . }}
 
 {{ if .Get "callout" }}
