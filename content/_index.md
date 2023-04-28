@@ -11,7 +11,7 @@ description: ""
 
 <span class="text-large">15 self-paced projects with short lessons, starting templates, and source code. Complete them on your own, or code along with me.</span>
 
-{{<cta for="funnel">}}
+{{<cta for="projects">}}
 
 {{<used-by>}}
 
